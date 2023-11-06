@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Apoka Regular";
+  src: url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.eot");
+  src: url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.woff")
+      format("woff");
+}
+
+$font_apoka: Apoka Regular;
+
+$header_l_height: 40px;
+
+$main_page_color: #03d71c;

@@ -1,0 +1,554 @@
+@font-face {
+  font-family: "Apoka Regular";
+  src: url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.eot");
+  src: url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.woff") format("woff");
+}
+@font-face {
+  font-family: "Apoka Regular";
+  src: url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.eot");
+  src: url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/08db43aa782b75d9bf2e7cf903a95f54.woff") format("woff");
+}
+/* line 9, ../scss/scss_advanced/_mixins.scss */
+.checkbox_hider, html body #search_opener, html body header nav #menu_opener, html body header nav .menu_container ul .right_menu_responsive {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 15, ../scss/scss_advanced/_mixins.scss */
+.checkbox_vsbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 4, ../scss/main.scss */
+* {
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 14, ../scss/main.scss */
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 19, ../scss/main.scss */
+html body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1550px;
+  width: 100%;
+}
+/* line 30, ../scss/main.scss */
+html body #search_opener:checked ~ header {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/* line 34, ../scss/main.scss */
+html body #search_opener:checked ~ header .right_menu_desktop .searching_bar_container label {
+  overflow: hidden;
+}
+/* line 37, ../scss/main.scss */
+html body #search_opener:checked ~ header .right_menu_desktop .searching_bar_container label .fa-search {
+  -webkit-transform: translate(-30px);
+          transform: translate(-30px);
+}
+/* line 41, ../scss/main.scss */
+html body #search_opener:checked ~ header .right_menu_desktop .searching_bar_container label .fa-times {
+  -webkit-transform: translate(-10px, 1px);
+          transform: translate(-10px, 1px);
+}
+/* line 48, ../scss/main.scss */
+html body #search_opener:checked ~ .search_bar_desktop {
+  position: fixed;
+  top: 95px;
+}
+/* line 56, ../scss/main.scss */
+html body header {
+  position: fixed;
+  top: 0;
+  max-width: 1550px;
+  width: 100%;
+  height: 90px;
+  padding: 0 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  -webkit-box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* line 70, ../scss/main.scss */
+html body header .logo_container {
+  width: 130px;
+  line-height: 40px;
+}
+/* line 74, ../scss/main.scss */
+html body header .logo_container .fa-utensils {
+  color: #03d71c;
+  font-size: 35px;
+}
+/* line 79, ../scss/main.scss */
+html body header .logo_container span {
+  font-size: 30px;
+  font-family: Apoka Regular;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #01015c;
+}
+/* line 88, ../scss/main.scss */
+html body header nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 104, ../scss/main.scss */
+html body header nav #menu_opener:checked ~ .menu_container .hamburger_menu_container label span:nth-child(2) {
+  -webkit-transform: translate(-15px);
+          transform: translate(-15px);
+  opacity: 0;
+}
+/* line 108, ../scss/main.scss */
+html body header nav #menu_opener:checked ~ .menu_container .hamburger_menu_container label span:nth-child(1) {
+  width: 35px;
+  -webkit-transform: translate(0px, 13.5px) rotate(-45deg);
+          transform: translate(0px, 13.5px) rotate(-45deg);
+}
+/* line 112, ../scss/main.scss */
+html body header nav #menu_opener:checked ~ .menu_container .hamburger_menu_container label span:nth-child(3) {
+  width: 35px;
+  -webkit-transform: translate(0px, -5px) rotate(45deg);
+          transform: translate(0px, -5px) rotate(45deg);
+}
+/* line 124, ../scss/main.scss */
+html body header nav .menu_container {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 129, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 136, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 35px;
+  line-height: 40px;
+}
+/* line 143, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon:hover {
+  cursor: pointer;
+}
+/* line 147, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon span {
+  height: 4px;
+  margin-bottom: 5px;
+  background: #01015c;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 155, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon .ham_line_1 {
+  width: 15px;
+}
+/* line 159, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon .ham_line_2 {
+  width: 25px;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 165, ../scss/main.scss */
+html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon .ham_line_3 {
+  width: 35px;
+  margin-bottom: 0px;
+}
+/* line 172, ../scss/main.scss */
+html body header nav .menu_container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+}
+/* line 176, ../scss/main.scss */
+html body header nav .menu_container ul #responsive_search_check {
+  display: none;
+}
+/* line 183, ../scss/main.scss */
+html body header nav .menu_container ul .responsive_search {
+  outline: none;
+  width: 0px;
+  text-indent: 10px;
+  height: 0px;
+  border-radius: 8px;
+  border: 0px solid #ccc;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+}
+/* line 192, ../scss/main.scss */
+html body header nav .menu_container ul .responsive_search:hover, html body header nav .menu_container ul .responsive_search:focus {
+  outline: none;
+}
+/* line 198, ../scss/main.scss */
+html body header nav .menu_container ul .menu_item_container {
+  width: 90px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 206, ../scss/main.scss */
+html body header nav .menu_container ul .menu_item_container:hover, html body header nav .menu_container ul .menu_item_container:focus {
+  background-color: #03d71c;
+}
+/* line 210, ../scss/main.scss */
+html body header nav .menu_container ul .menu_item_container:hover li, html body header nav .menu_container ul .menu_item_container:focus li {
+  color: white;
+}
+/* line 215, ../scss/main.scss */
+html body header nav .menu_container ul .menu_item_container:not(:last-child) {
+  margin-right: 5px;
+}
+/* line 219, ../scss/main.scss */
+html body header nav .menu_container ul .menu_item_container li {
+  color: #5c5c5c;
+  font-weight: 500;
+  font-family: Apoka Regular;
+  font-size: 17px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 231, ../scss/main.scss */
+html body header .right_menu_desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+/* line 236, ../scss/main.scss */
+html body header .right_menu_desktop .searching_bar_container {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+/* line 244, ../scss/main.scss */
+html body header .right_menu_desktop .searching_bar_container label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #dcd9d9;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+/* line 256, ../scss/main.scss */
+html body header .right_menu_desktop .searching_bar_container label:hover {
+  cursor: pointer;
+  background-color: #03d71c;
+}
+/* line 260, ../scss/main.scss */
+html body header .right_menu_desktop .searching_bar_container label:hover .fas {
+  color: white;
+}
+/* line 265, ../scss/main.scss */
+html body header .right_menu_desktop .searching_bar_container label .fas {
+  font-size: 19px;
+  color: #01015c;
+  -webkit-transform: translate(7px, 1px);
+          transform: translate(7px, 1px);
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+/* line 272, ../scss/main.scss */
+html body header .right_menu_desktop .searching_bar_container label .fa-times {
+  -webkit-transform: translate(20px, 1px);
+          transform: translate(20px, 1px);
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+/* line 279, ../scss/main.scss */
+html body header .right_menu_desktop .wish_item {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+/* line 287, ../scss/main.scss */
+html body header .right_menu_desktop .wish_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #dcd9d9;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+/* line 298, ../scss/main.scss */
+html body header .right_menu_desktop .wish_item a:hover {
+  background-color: #03d71c;
+}
+/* line 301, ../scss/main.scss */
+html body header .right_menu_desktop .wish_item a:hover .fas {
+  color: white;
+}
+/* line 306, ../scss/main.scss */
+html body header .right_menu_desktop .wish_item a .fas {
+  margin-top: 3px;
+  font-size: 19px;
+  color: #01015c;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+/* line 315, ../scss/main.scss */
+html body header .right_menu_desktop .basket_item {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 322, ../scss/main.scss */
+html body header .right_menu_desktop .basket_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #dcd9d9;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+/* line 333, ../scss/main.scss */
+html body header .right_menu_desktop .basket_item a:hover {
+  background-color: #03d71c;
+}
+/* line 336, ../scss/main.scss */
+html body header .right_menu_desktop .basket_item a:hover .fas {
+  color: white;
+}
+/* line 341, ../scss/main.scss */
+html body header .right_menu_desktop .basket_item a .fas {
+  margin-top: 3px;
+  font-size: 19px;
+  color: #01015c;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+/* line 352, ../scss/main.scss */
+html body .search_bar_desktop {
+  max-width: 1550px;
+  width: 99.8%;
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 19px;
+  text-indent: 15px;
+  color: #5c5c5c;
+  border: 1px solid #979797;
+  -webkit-box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.2);
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+}
+/* line 365, ../scss/main.scss */
+html body .search_bar_desktop::-webkit-search-cancel-button:hover {
+  cursor: pointer;
+}
+/* line 369, ../scss/main.scss */
+html body .search_bar_desktop::-webkit-search-cancel-button {
+  margin-right: 15px;
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 43%, #01015c 45%, #01015c 55%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 0) 100%), linear-gradient(135deg, transparent 0%, transparent 43%, #01015c 45%, #01015c 55%, transparent 57%, transparent 100%);
+}
+/* line 397, ../scss/main.scss */
+html body .container {
+  margin-top: 95px;
+  max-width: 1550px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 405, ../scss/main.scss */
+html body .container .banner {
+  width: 100%;
+  height: 1300px;
+  border: 1px solid #000;
+}
+/* line 411, ../scss/main.scss */
+html body .container .banner2 {
+  width: 92%;
+  height: 1300px;
+  border: 1px solid #000;
+}
+/* line 418, ../scss/main.scss */
+html body footer {
+  max-width: 1550px !important;
+  width: 100% !important;
+  height: 300px;
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=main.css.map */

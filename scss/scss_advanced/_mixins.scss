@@ -1,0 +1,19 @@
+@import "./variables";
+
+@mixin direction($type, $track) {
+  display: flex;
+  flex-direction: $type;
+  justify-content: $track;
+}
+
+.checkbox_hider {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.checkbox_vsbl {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
