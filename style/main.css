@@ -47,8 +47,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
-/* line 19, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 html body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,31 +62,31 @@ html body {
   max-width: 1550px;
   width: 100%;
 }
-/* line 30, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 html body #search_opener:checked ~ header {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-/* line 34, ../scss/main.scss */
+/* line 36, ../scss/main.scss */
 html body #search_opener:checked ~ header .right_menu_desktop .searching_bar_container label {
   overflow: hidden;
 }
-/* line 37, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 html body #search_opener:checked ~ header .right_menu_desktop .searching_bar_container label .fa-search {
   -webkit-transform: translate(-30px);
           transform: translate(-30px);
 }
-/* line 41, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 html body #search_opener:checked ~ header .right_menu_desktop .searching_bar_container label .fa-times {
   -webkit-transform: translate(-10px, 1px);
           transform: translate(-10px, 1px);
 }
-/* line 48, ../scss/main.scss */
+/* line 50, ../scss/main.scss */
 html body #search_opener:checked ~ .search_bar_desktop {
   position: fixed;
   top: 95px;
 }
-/* line 56, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 html body header {
   position: fixed;
   top: 0;
@@ -116,17 +118,17 @@ html body header {
           box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-/* line 70, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 html body header .logo_container {
   width: 130px;
   line-height: 40px;
 }
-/* line 74, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 html body header .logo_container .fa-utensils {
   color: #03d71c;
   font-size: 35px;
 }
-/* line 79, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 html body header .logo_container span {
   font-size: 30px;
   font-family: Apoka Regular;
@@ -134,7 +136,7 @@ html body header .logo_container span {
   letter-spacing: 0;
   color: #01015c;
 }
-/* line 88, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 html body header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -145,25 +147,25 @@ html body header nav {
   display: -ms-flexbox;
   display: flex;
 }
-/* line 104, ../scss/main.scss */
+/* line 106, ../scss/main.scss */
 html body header nav #menu_opener:checked ~ .menu_container .hamburger_menu_container label span:nth-child(2) {
   -webkit-transform: translate(-15px);
           transform: translate(-15px);
   opacity: 0;
 }
-/* line 108, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 html body header nav #menu_opener:checked ~ .menu_container .hamburger_menu_container label span:nth-child(1) {
   width: 35px;
   -webkit-transform: translate(0px, 13.5px) rotate(-45deg);
           transform: translate(0px, 13.5px) rotate(-45deg);
 }
-/* line 112, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 html body header nav #menu_opener:checked ~ .menu_container .hamburger_menu_container label span:nth-child(3) {
   width: 35px;
   -webkit-transform: translate(0px, -5px) rotate(45deg);
           transform: translate(0px, -5px) rotate(45deg);
 }
-/* line 124, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 html body header nav .menu_container {
   width: auto;
   display: -webkit-box;
@@ -180,7 +182,7 @@ html body header nav .menu_container {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 129, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -194,7 +196,7 @@ html body header nav .menu_container .hamburger_menu_container {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 136, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,11 +211,11 @@ html body header nav .menu_container .hamburger_menu_container .hamburger_menu_i
   width: 35px;
   line-height: 40px;
 }
-/* line 143, ../scss/main.scss */
+/* line 145, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon:hover {
   cursor: pointer;
 }
-/* line 147, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon span {
   height: 4px;
   margin-bottom: 5px;
@@ -222,11 +224,11 @@ html body header nav .menu_container .hamburger_menu_container .hamburger_menu_i
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 155, ../scss/main.scss */
+/* line 157, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon .ham_line_1 {
   width: 15px;
 }
-/* line 159, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon .ham_line_2 {
   width: 25px;
   -webkit-transform: translate(0, 0);
@@ -234,12 +236,12 @@ html body header nav .menu_container .hamburger_menu_container .hamburger_menu_i
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 165, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 html body header nav .menu_container .hamburger_menu_container .hamburger_menu_icon .ham_line_3 {
   width: 35px;
   margin-bottom: 0px;
 }
-/* line 172, ../scss/main.scss */
+/* line 174, ../scss/main.scss */
 html body header nav .menu_container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,11 +255,11 @@ html body header nav .menu_container ul {
           justify-content: center;
   width: auto;
 }
-/* line 176, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 html body header nav .menu_container ul #responsive_search_check {
   display: none;
 }
-/* line 183, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 html body header nav .menu_container ul .responsive_search {
   outline: none;
   width: 0px;
@@ -268,11 +270,11 @@ html body header nav .menu_container ul .responsive_search {
   -webkit-transition: height 0.5s ease;
   transition: height 0.5s ease;
 }
-/* line 192, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 html body header nav .menu_container ul .responsive_search:hover, html body header nav .menu_container ul .responsive_search:focus {
   outline: none;
 }
-/* line 198, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 html body header nav .menu_container ul .menu_item_container {
   width: 90px;
   line-height: 40px;
@@ -293,19 +295,19 @@ html body header nav .menu_container ul .menu_item_container {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-/* line 206, ../scss/main.scss */
+/* line 208, ../scss/main.scss */
 html body header nav .menu_container ul .menu_item_container:hover, html body header nav .menu_container ul .menu_item_container:focus {
   background-color: #03d71c;
 }
-/* line 210, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 html body header nav .menu_container ul .menu_item_container:hover li, html body header nav .menu_container ul .menu_item_container:focus li {
   color: white;
 }
-/* line 215, ../scss/main.scss */
+/* line 217, ../scss/main.scss */
 html body header nav .menu_container ul .menu_item_container:not(:last-child) {
   margin-right: 5px;
 }
-/* line 219, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 html body header nav .menu_container ul .menu_item_container li {
   color: #5c5c5c;
   font-weight: 500;
@@ -314,7 +316,7 @@ html body header nav .menu_container ul .menu_item_container li {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-/* line 231, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 html body header .right_menu_desktop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,7 +333,7 @@ html body header .right_menu_desktop {
           align-items: center;
   width: auto;
 }
-/* line 236, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 html body header .right_menu_desktop .searching_bar_container {
   width: 40px;
   height: 40px;
@@ -344,7 +346,7 @@ html body header .right_menu_desktop .searching_bar_container {
           align-items: center;
   margin-right: 10px;
 }
-/* line 244, ../scss/main.scss */
+/* line 246, ../scss/main.scss */
 html body header .right_menu_desktop .searching_bar_container label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -364,16 +366,16 @@ html body header .right_menu_desktop .searching_bar_container label {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 256, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 html body header .right_menu_desktop .searching_bar_container label:hover {
   cursor: pointer;
   background-color: #03d71c;
 }
-/* line 260, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 html body header .right_menu_desktop .searching_bar_container label:hover .fas {
   color: white;
 }
-/* line 265, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 html body header .right_menu_desktop .searching_bar_container label .fas {
   font-size: 19px;
   color: #01015c;
@@ -382,14 +384,14 @@ html body header .right_menu_desktop .searching_bar_container label .fas {
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
-/* line 272, ../scss/main.scss */
+/* line 274, ../scss/main.scss */
 html body header .right_menu_desktop .searching_bar_container label .fa-times {
   -webkit-transform: translate(20px, 1px);
           transform: translate(20px, 1px);
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
-/* line 279, ../scss/main.scss */
+/* line 281, ../scss/main.scss */
 html body header .right_menu_desktop .wish_item {
   width: 40px;
   height: 40px;
@@ -402,7 +404,7 @@ html body header .right_menu_desktop .wish_item {
           align-items: center;
   margin-right: 10px;
 }
-/* line 287, ../scss/main.scss */
+/* line 289, ../scss/main.scss */
 html body header .right_menu_desktop .wish_item a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,15 +423,15 @@ html body header .right_menu_desktop .wish_item a {
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
 }
-/* line 298, ../scss/main.scss */
+/* line 300, ../scss/main.scss */
 html body header .right_menu_desktop .wish_item a:hover {
   background-color: #03d71c;
 }
-/* line 301, ../scss/main.scss */
+/* line 303, ../scss/main.scss */
 html body header .right_menu_desktop .wish_item a:hover .fas {
   color: white;
 }
-/* line 306, ../scss/main.scss */
+/* line 308, ../scss/main.scss */
 html body header .right_menu_desktop .wish_item a .fas {
   margin-top: 3px;
   font-size: 19px;
@@ -437,7 +439,7 @@ html body header .right_menu_desktop .wish_item a .fas {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-/* line 315, ../scss/main.scss */
+/* line 317, ../scss/main.scss */
 html body header .right_menu_desktop .basket_item {
   width: 40px;
   height: 40px;
@@ -449,7 +451,7 @@ html body header .right_menu_desktop .basket_item {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 322, ../scss/main.scss */
+/* line 324, ../scss/main.scss */
 html body header .right_menu_desktop .basket_item a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,15 +470,15 @@ html body header .right_menu_desktop .basket_item a {
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
 }
-/* line 333, ../scss/main.scss */
+/* line 335, ../scss/main.scss */
 html body header .right_menu_desktop .basket_item a:hover {
   background-color: #03d71c;
 }
-/* line 336, ../scss/main.scss */
+/* line 338, ../scss/main.scss */
 html body header .right_menu_desktop .basket_item a:hover .fas {
   color: white;
 }
-/* line 341, ../scss/main.scss */
+/* line 343, ../scss/main.scss */
 html body header .right_menu_desktop .basket_item a .fas {
   margin-top: 3px;
   font-size: 19px;
@@ -484,7 +486,7 @@ html body header .right_menu_desktop .basket_item a .fas {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-/* line 352, ../scss/main.scss */
+/* line 354, ../scss/main.scss */
 html body .search_bar_desktop {
   max-width: 1550px;
   width: 99.8%;
@@ -501,11 +503,11 @@ html body .search_bar_desktop {
   -webkit-transition: top 0.5s ease;
   transition: top 0.5s ease;
 }
-/* line 365, ../scss/main.scss */
+/* line 367, ../scss/main.scss */
 html body .search_bar_desktop::-webkit-search-cancel-button:hover {
   cursor: pointer;
 }
-/* line 369, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 html body .search_bar_desktop::-webkit-search-cancel-button {
   margin-right: 15px;
   -webkit-appearance: none;
@@ -515,8 +517,8 @@ html body .search_bar_desktop::-webkit-search-cancel-button {
   margin-left: 10px;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 43%, #01015c 45%, #01015c 55%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 0) 100%), linear-gradient(135deg, transparent 0%, transparent 43%, #01015c 45%, #01015c 55%, transparent 57%, transparent 100%);
 }
-/* line 397, ../scss/main.scss */
-html body .container {
+/* line 399, ../scss/main.scss */
+html body section {
   margin-top: 95px;
   max-width: 1550px;
   width: 100%;
@@ -527,23 +529,433 @@ html body .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-x: hidden;
+}
+/* line 407, ../scss/main.scss */
+html body section input {
+  display: none;
+}
+/* line 415, ../scss/main.scss */
+html body section #slide_1:checked ~ .banner_carousel_container .carousel_main .carousel_content {
+  margin-left: 0;
+}
+/* line 426, ../scss/main.scss */
+html body section #slide_2:checked ~ .banner_carousel_container .carousel_main {
+  margin-left: -66%;
+}
+/* line 436, ../scss/main.scss */
+html body section #slide_3:checked ~ .banner_carousel_container .carousel_main {
+  margin-left: -132%;
+}
+/* line 443, ../scss/main.scss */
+html body section .banner_carousel_container {
+  width: 300%;
+  height: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
-/* line 405, ../scss/main.scss */
-html body .container .banner {
+/* line 454, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main {
+  width: calc(300% / 3);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: margin-left 0.5s ease;
+  transition: margin-left 0.5s ease;
+  scroll-behavior: auto;
+  overscroll-behavior-x: contain;
+  -webkit-scroll-snap-type: mandatory;
+      -ms-scroll-snap-type: mandatory;
+          scroll-snap-type: mandatory;
+  scrollbar-width: none;
+}
+/* line 466, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1550px;
   width: 100%;
-  height: 1300px;
-  border: 1px solid #000;
+  -webkit-transition: margin-left 0.5s ease;
+  transition: margin-left 0.5s ease;
 }
-/* line 411, ../scss/main.scss */
-html body .container .banner2 {
-  width: 92%;
-  height: 1300px;
-  border: 1px solid #000;
+/* line 475, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-/* line 418, ../scss/main.scss */
+/* line 480, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special {
+  margin-bottom: 10px;
+}
+/* line 482, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special span {
+  font-family: Apoka Regular;
+  font-size: 19px;
+  color: #03d71c;
+}
+/* line 489, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_header {
+  margin-bottom: 10px;
+}
+/* line 491, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_header span {
+  font-family: Apoka Regular;
+  font-weight: 800;
+  font-size: 38px;
+  color: #01015c;
+  letter-spacing: 1px;
+}
+/* line 499, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_detail {
+  margin-bottom: 20px;
+  height: auto;
+  width: 440px;
+}
+/* line 503, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_detail span {
+  font-size: 16px;
+  font-family: Apoka Regular;
+  color: #5c5c5c;
+}
+/* line 510, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_order {
+  width: 180px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+/* line 518, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_order:hover {
+  width: 195px;
+}
+/* line 520, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_order:hover a {
+  background-color: #03d71c;
+}
+/* line 524, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .details_container .our_special_order a {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #01015c;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 538, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .img_container {
+  width: 450px;
+  height: 450px;
+}
+/* line 541, ../scss/main.scss */
+html body section .banner_carousel_container .carousel_main .carousel_content .img_container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 550, ../scss/main.scss */
+html body section .navigator_container {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+/* line 557, ../scss/main.scss */
+html body section .navigator_container label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #5c5c5c;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 563, ../scss/main.scss */
+html body section .navigator_container label:hover, html body section .navigator_container label:focus {
+  border: 1px solid #01015c;
+  background-color: #03d71c;
+}
+/* line 569, ../scss/main.scss */
+html body section .navigator_container label:nth-child(2) {
+  margin: 0 10px;
+}
+/* line 575, ../scss/main.scss */
+html body section .our_dishes_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  background-color: #efefef;
+}
+/* line 583, ../scss/main.scss */
+html body section .our_dishes_container .o_d_container .header_dishes {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #03d71c;
+  margin-bottom: 5px;
+  font-family: Apoka Regular;
+}
+/* line 593, ../scss/main.scss */
+html body section .our_dishes_container .o_d_container .header_dishes_2 {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  color: #01015c;
+  font-family: Apoka Regular;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+/* line 604, ../scss/main.scss */
+html body section .our_dishes_container .asdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 609, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  max-width: 1090px;
+}
+/* line 617, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card {
+  border-radius: 5px;
+  width: 250px;
+  height: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 9px 25px -6px rgba(0, 0, 0, 0.51);
+          box-shadow: 10px 9px 25px -6px rgba(0, 0, 0, 0.51);
+}
+/* line 634, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card:hover .card_img_cont .fa-eye {
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+}
+/* line 637, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card:hover .card_img_cont .fa-heart {
+  -webkit-transform: translate(0px, 20px);
+          transform: translate(0px, 20px);
+}
+/* line 643, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .card_img_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 645, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .card_img_cont .fa-eye {
+  color: #01015c;
+  -webkit-transform: translate(-60px, 20px);
+          transform: translate(-60px, 20px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 650, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .card_img_cont .fa-eye:hover {
+  color: #03d71c;
+}
+/* line 654, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .card_img_cont img {
+  width: 170px;
+  height: 140px;
+}
+/* line 658, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .card_img_cont .fa-heart {
+  color: #01015c;
+  -webkit-transform: translate(60px, 20px);
+          transform: translate(60px, 20px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 663, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .card_img_cont .fa-heart:hover {
+  color: #03d71c;
+}
+/* line 668, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .o_d_card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+/* line 673, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .o_d_card_content .header {
+  font-family: Apoka Regular;
+  font-size: 17px;
+  font-weight: 700;
+}
+/* line 678, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .o_d_card_content img {
+  width: 70px;
+  height: 20px;
+  margin: 5px 0;
+}
+/* line 683, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .o_d_card_content .price {
+  font-family: Apoka Regular;
+  font-size: 17px;
+  color: #03d71c;
+  font-weight: 700;
+}
+/* line 689, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .o_d_card_content a {
+  width: 140px;
+  height: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8px;
+  background-color: #01015c;
+  color: white;
+  font-size: 14px;
+  font-family: Apoka Regular;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* line 704, ../scss/main.scss */
+html body section .our_dishes_container .asdf .dishes_cards .card .o_d_card_content a:hover {
+  background-color: #03d71c;
+}
+/* line 714, ../scss/main.scss */
 html body footer {
   max-width: 1550px !important;
   width: 100% !important;
